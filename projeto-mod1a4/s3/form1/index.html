@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mentoria</title>
+</head>
+<body class="center column">
+    <div class="container">
+        <header class="flex column">
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+        <form id="my-form">
+            <fieldset>
+                <div class="fieldset flex column">
+                    <legend>Informações pessoais</legend>
+                    <div class="name-input-area flex">
+                        <div class="input-wrapper flex column">
+                            <label for="user-name">Nome</label>
+                            <input type="text" name="user-name" required id="user-name">                    
+                        </div>
+                        <div class="input-wrapper flex column">
+                            <label for="user-surname">Sobrenome</label>
+                            <input type="text" required name="user-surname" id="user-surname">
+                        </div>
+                    </div>
+                    
+                    <div class="input-wrapper flex column">
+                        <label for="user-email">Email <span>(digite um email válido)</span></label>
+                        <input type="email" name="user-email" id="user-email">
+                    </div>
+                    <div class="input-wrapper flex column">
+                        <label for="user-pasword">Senha <span>(mínimo de 6 caracteres)</span></label>
+                        <input type="password" minlength="6" name="user-pasword" id="user-pasword">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset flex column">
+                    <legend>Informações do mentor</legend>
+                    <div class="input-wrapper flex column">
+                        <label for="mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                        <input type="text" name="mentor-name" id="mentor-name">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset flex column">
+                    <legend>Seus horários disponíveis</legend>
+                    <fieldset>
+                        <legend>Primeira mentoria</legend>
+                        <div class="rol-3 flex">
+                            <div class="input-wrapper flex column">
+                                <label for="first-mentor-date">Data <span>(DD/MM/AAAA)</span></label>
+                                <input type="date" class="date" name="first-mentor-date" id="first-mentor-date">
+                            </div>
+                            <div class="time flex">
+                                <div class="input-wrapper flex column">
+                                    <label for="first-mentor-initial-time">Das</label>
+                                    <input type="time" name="first-mentor-initial-time" id="first-mentor-initial-time">
+                                </div>
+                                <div class="input-wrapper flex column">
+                                    <label for="first-mentor-final-time">Até</label>
+                                    <input type="time" name="first-mentor-final-time" id="first-mentor-final-time">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Segunda mentoria</legend>
+                        <div class="rol-3 flex">
+                            <div class="input-wrapper flex column">
+                                <label for="second-mentor-date">Data <span>(DD/MM/AAAA)</span></label>
+                                <input type="date" class="date" name="second-mentor-date" id="second-mentor-date">
+                            </div>
+                            <div class="time flex">
+                                <div class="input-wrapper flex column">
+                                    <label for="second-mentor-initial-time">Das</label>
+                                    <input type="time" name="second-mentor-initial-time" id="second-mentor-initial-time">
+                                </div>
+                                <div class="input-wrapper flex column">
+                                    <label for="second-mentor-final-time">Até</label>
+                                    <input type="time" name="second-mentor-final-time" id="second-mentor-final-time">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </form>
+        <footer class="center">
+            <button form="my-form">Salvar</button>
+        </footer>
+    </div>
+</body>
+</html>
